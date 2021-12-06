@@ -14,7 +14,7 @@ type Record struct {
 // Record collection for Sorting Interface
 type Records []Record
 
-// Len for Sortint Records
+// Len for Sorting Records
 func (rs Records) Len() int {
 	return len(rs)
 }
@@ -24,7 +24,7 @@ func (r Records) Less(i, j int) bool {
 	return r[i].ID < r[j].ID
 }
 
-// Swap for Swapping Records in a collection
+// Swap for Swapping Records in Sort
 func (r Records) Swap(i, j int) {
 	r[i], r[j] = r[j], r[i]
 }
